@@ -27,6 +27,7 @@ Current build targets are:
 
 - npm
 - Pypi
+- maven
 
 ## Versioning
 

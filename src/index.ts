@@ -51,6 +51,11 @@ export class CdktfProviderProject extends JsiiProject {
         distName: `${namespace}-cdktf-provider-${providerName}`,
         module: `${namespace}_cdktf_provider_${providerName}`,
       },
+      java: {
+        javaPackage: `${namespace}.cdktf.provider.${providerName}`,
+        mavenGroupId: `${namespace}`,
+        mavenArtifactId: `cdktf-provider-${providerName}`,
+      },
     });
 
     new CdktfConfig(this, { terraformProvider, providerName, providerVersion })
